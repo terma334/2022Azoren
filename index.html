@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azoren</title>
+
+<link rel="stylesheet" href="https://terma334.github.io/journeys/style.css">
+
+</head>
+<body>
+<div id="menuButton" onclick="toggleMenu()">
+    ☰
+</div>
+<nav id="nav">
+
+    <div class="nav-oben">
+        <details class="reisen-dropdown">
+            <summary>Alle Reisen</summary>
+            <div class="reisen-untermenue" id="reisen-links"></div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="nav-tage">
+       
+        <a href="#Tag0" onclick="toggleMenu()">Azoren</a><br>
+        <a href="#Tag1" onclick="toggleMenu()">Terceira</a>
+        <a href="#Tag2" onclick="toggleMenu()">Flores</a>
+        <a href="#Tag3" onclick="toggleMenu()">Corvu</a>
+        <a href="#Tag4" onclick="toggleMenu()">Faial</a>
+        <a href="#Tag5" onclick="toggleMenu()">Pico</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <section id="Tag0"><center>
+            <p class="tag">Azoren</p>
+            <p>08. Juni 2022 - 22. Juni 2022</p>
+            <p><img src="pictures/flag.png" width="70%">
+            <p><img src="pictures/map.jpg" width="70%"></center>
+        </section>
+    <hr>
+        <section id="Tag1">
+            <p class="tag">Terceira</p>
+            <p><div class="galerie" id="galerie1"></div></p>
+        </section>
+    <hr>
+        <section id="Tag2">
+            <p class="tag">Flores</p>
+            <p><div class="galerie" id="galerie2"></div></p>
+        </section>
+    <hr>
+        <section id="Tag3">
+            <p class="tag">Corvu</p>
+            <p><div class="galerie" id="galerie3"></div></p>
+        </section>
+    <hr>
+        <section id="Tag4">
+            <p class="tag">Faial</p>
+            <p><div class="galerie" id="galerie4"></div></p>
+        </section>
+    <hr>
+        <section id="Tag5">
+            <p class="tag">Pico</p>
+            <p><div class="galerie" id="galerie5"></div></p>
+        </section>
+   
+
+</main>
+<div id="lightbox">
+
+    <span class="schliessen" onclick="closeLightbox()">&times;</span>
+
+    <span class="pfeil links" onclick="prevImage()">&#10094;</span>
+
+<div class="lightbox-inhalt">
+
+    <img id="grossesBild" style="display:none;">
+
+    <video id="grossesVideo"
+           controls
+           style="display:none; max-width:90vw; max-height:85vh;">
+    </video>
+
+    <div id="videoOverlay" onclick="videoStarten()">
+    ▶
+    </div>
+
+    <p id="bildBeschreibung"></p>
+
+</div>
+
+    <span class="pfeil rechts" onclick="nextImage()">&#10095;</span>
+
+</div>
+
+<script src="https://terma334.github.io/journeys/lightboxscript.js"></script>
+<script src="galerie.js"></script>
+<script src="https://terma334.github.io/journeys/script.js"></script>
+<script src="https://terma334.github.io/journeys/reisen-navigation.js"></script>
+
+</body>
+</html>
